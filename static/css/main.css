@@ -1,0 +1,1153 @@
+:root {
+  --dark-clr-1: hsl(212, 12%, 5%);
+  --dark-clr-2: hsl(212, 12%, 15%); 
+  --dark-clr-3: hsl(212, 12%, 25%);
+  --dark-clr-4: hsl(212, 12%, 35%);
+  --dark-clr-5: hsl(212, 12%, 45%);
+  --dark-clr-6: hsl(212, 12%, 55%);
+  --dark-clr-7: hsl(212, 12%, 65%);
+  --dark-clr-8: hsl(212, 12%, 75%);
+  --dark-clr-9: hsl(212, 12%, 85%);
+  --dark-clr-10: hsl(212, 12%, 95%);
+
+  /* Primary Colors */
+  --primary-clr-1: hsl(212, 84%, 35%);
+  --primary-clr-2: hsl(212, 84%, 55%);
+  --primary-clr-3: hsl(212, 84%, 75%);
+  --primary-clr-tran: hsl(212, 84%, 55%, 55%);
+
+  /* Secondary Colors */
+  --secondary-clr-1: hsl(177, 84%, 35%);
+  --secondary-clr-2: hsl(177, 84%, 55%);
+  --secondary-clr-3: hsl(177, 84%, 75%);
+  --secondary-clr-tran: hsl(177, 84%, 55%, 55%);
+
+  /* Success Colors */
+  --success-clr-1: hsl(144, 78%, 36%);
+  --success-clr-2: hsl(144, 78%, 56%);
+  --success-clr-3: hsl(144, 78%, 76%);
+  --success-clr-tran: hsl(144, 78%, 56%, 55%);
+
+  /* Danger Colors */
+  --danger-clr-1: hsl(350, 67%, 58%);
+  --danger-clr-2: hsl(350, 67%, 78%);
+  --danger-clr-3: hsl(350, 67%, 98%);
+  --danger-clr-tran: hsl(350, 67%, 78%, 55%);
+
+  /* Warning Colors */
+  --warning-clr-1: hsl(40, 79%, 50%);
+  --warning-clr-2: hsl(40, 79%, 70%);
+  --warning-clr-3: hsl(40, 79%, 90%);
+  --warning-clr-tran: hsl(40, 79%, 70%, 55%);
+
+  /* Info Colors */
+  --info-clr-1: hsl(195, 59%, 58%);
+  --info-clr-2: hsl(195, 59%, 78%);
+  --info-clr-3: hsl(195, 59%, 98%);
+  --info-clr-tran: hsl(195, 59%, 78%, 55%);
+}
+
+/*****************************************************************************
+Color classes
+---------------
+These classes can be applied to any element to change 
+the text/font or border color.
+*****************************************************************************/
+/* Background colours */
+.bg-dark-1 { background-color: var(--dark-clr-1) !important; }
+.bg-dark-2 { background-color: var(--dark-clr-2) !important; }
+.bg-dark-3 { background-color: var(--dark-clr-3) !important; }
+.bg-dark-4 { background-color: var(--dark-clr-4) !important; }
+.bg-dark-5 { background-color: var(--dark-clr-5) !important; }
+.bg-dark-6 { background-color: var(--dark-clr-6) !important; }
+.bg-dark-7 { background-color: var(--dark-clr-7) !important; }
+.bg-dark-8 { background-color: var(--dark-clr-8) !important; }
+.bg-dark-9 { background-color: var(--dark-clr-9) !important; }
+.bg-dark-10 { background-color: var(--dark-clr-10) !important; }
+
+.bg-primary-1 { background-color: var(--primary-clr-1) !important; }
+.bg-primary-2 { background-color: var(--primary-clr-2) !important; }
+.bg-primary-3 { background-color: var(--primary-clr-3) !important; }
+.bg-primary-tran { background-color: var(--primary-clr-tran) !important; }
+
+.bg-secondary-1 { background-color: var(--secondary-clr-1) !important; }
+.bg-secondary-2 { background-color: var(--secondary-clr-2) !important; }
+.bg-secondary-3 { background-color: var(--secondary-clr-3) !important; }
+.bg-secondary-tran { background-color: var(--secondary-clr-tran) !important; }
+
+.bg-success-1 { background-color: var(--success-clr-1) !important; }
+.bg-success-2 { background-color: var(--success-clr-2) !important; }
+.bg-success-3 { background-color: var(--success-clr-3) !important; }
+.bg-success-tran { background-color: var(--success-clr-tran) !important; }
+
+.bg-danger-1 { background-color: var(--danger-clr-1) !important; }
+.bg-danger-2 { background-color: var(--danger-clr-2) !important; }
+.bg-danger-3 { background-color: var(--danger-clr-3) !important; }
+.bg-danger-tran { background-color: var(--danger-clr-tran) !important; }
+
+.bg-warning-1 { background-color: var(--warning-clr-1) !important; }
+.bg-warning-2 { background-color: var(--warning-clr-2) !important; }
+.bg-warning-3 { background-color: var(--warning-clr-3) !important; }
+.bg-warning-tran { background-color: var(--warning-clr-tran) !important; }
+
+.bg-info-1 { background-color: var(--info-clr-1) !important; }
+.bg-info-2 { background-color: var(--info-clr-2) !important; }
+.bg-info-3 { background-color: var(--info-clr-3) !important; }
+.bg-info-tran { background-color: var(--info-clr-tran) !important; }
+
+/* Text colours */
+.ft-dark-1 { color: var(--dark-clr-1) !important; }
+.ft-dark-2 { color: var(--dark-clr-2) !important; }
+.ft-dark-3 { color: var(--dark-clr-3) !important; }
+.ft-dark-4 { color: var(--dark-clr-4) !important; }
+.ft-dark-5 { color: var(--dark-clr-5) !important; }
+.ft-dark-6 { color: var(--dark-clr-6) !important; }
+.ft-dark-7 { color: var(--dark-clr-7) !important; }
+.ft-dark-8 { color: var(--dark-clr-8) !important; }
+.ft-dark-9 { color: var(--dark-clr-9) !important; }
+.ft-dark-10 { color: var(--dark-clr-10) !important; }
+
+.ft-primary-1 { color: var(--primary-clr-1) !important; }
+.ft-primary-2 { color: var(--primary-clr-2) !important; }
+.ft-primary-3 { color: var(--primary-clr-3) !important; }
+.ft-primary-tran { color: var(--primary-clr-tran) !important; }
+
+.ft-secondary-1 { color: var(--secondary-clr-1) !important; }
+.ft-secondary-2 { color: var(--secondary-clr-2) !important; }
+.ft-secondary-3 { color: var(--secondary-clr-3) !important; }
+.ft-secondary-tran { color: var(--secondary-clr-tran) !important; }
+
+.ft-success-1 { color: var(--success-clr-1) !important; }
+.ft-success-2 { color: var(--success-clr-2) !important; }
+.ft-success-3 { color: var(--success-clr-3) !important; }
+.ft-success-tran { color: var(--success-clr-tran) !important; }
+
+.ft-danger-1 { color: var(--danger-clr-1) !important; }
+.ft-danger-2 { color: var(--danger-clr-2) !important; }
+.ft-danger-3 { color: var(--danger-clr-3) !important; }
+.ft-danger-tran { color: var(--danger-clr-tran) !important; }
+
+.ft-warning-1 { color: var(--warning-clr-1) !important; }
+.ft-warning-2 { color: var(--warning-clr-2) !important; }
+.ft-warning-3 { color: var(--warning-clr-3) !important; }
+.ft-warning-tran { color: var(--warning-clr-tran) !important; }
+
+.ft-info-1 { color: var(--info-clr-1) !important; }
+.ft-info-2 { color: var(--info-clr-2) !important; }
+.ft-info-3 { color: var(--info-clr-3) !important; }
+.ft-info-tran { color: var(--info-clr-tran) !important; }
+
+/* Border colours */
+.bd-dark-1 { border-color: var(--dark-clr-1) !important; }
+.bd-dark-2 { border-color: var(--dark-clr-2) !important; }
+.bd-dark-3 { border-color: var(--dark-clr-3) !important; }
+.bd-dark-4 { border-color: var(--dark-clr-4) !important; }
+.bd-dark-5 { border-color: var(--dark-clr-5) !important; }
+.bd-dark-6 { border-color: var(--dark-clr-6) !important; }
+.bd-dark-7 { border-color: var(--dark-clr-7) !important; }
+.bd-dark-8 { border-color: var(--dark-clr-8) !important; }
+.bd-dark-9 { border-color: var(--dark-clr-9) !important; }
+.bd-dark-10 { border-color: var(--dark-clr-10) !important; }
+
+.bd-primary-1 { border-color: var(--primary-clr-1) !important; }
+.bd-primary-2 { border-color: var(--primary-clr-2) !important; }
+.bd-primary-3 { border-color: var(--primary-clr-3) !important; }
+.bd-primary-tran { border-color: var(--primary-clr-tran) !important; }
+
+.bd-secondary-1 { border-color: var(--secondary-clr-1) !important; }
+.bd-secondary-2 { border-color: var(--secondary-clr-2) !important; }
+.bd-secondary-3 { border-color: var(--secondary-clr-3) !important; }
+.bd-secondary-tran { border-color: var(--secondary-clr-tran) !important; }
+
+.bd-success-1 { border-color: var(--success-clr-1) !important; }
+.bd-success-2 { border-color: var(--success-clr-2) !important; }
+.bd-success-3 { border-color: var(--success-clr-3) !important; }
+.bd-success-tran { border-color: var(--success-clr-tran) !important; }
+
+.bd-danger-1 { border-color: var(--danger-clr-1) !important; }
+.bd-danger-2 { border-color: var(--danger-clr-2) !important; }
+.bd-danger-3 { border-color: var(--danger-clr-3) !important; }
+.bd-danger-tran { border-color: var(--danger-clr-tran) !important; }
+
+.bd-warning-1 { border-color: var(--warning-clr-1) !important; }
+.bd-warning-2 { border-color: var(--warning-clr-2) !important; }
+.bd-warning-3 { border-color: var(--warning-clr-3) !important; }
+.bd-warning-tran { border-color: var(--warning-clr-tran) !important; }
+
+.bd-info-1 { border-color: var(--info-clr-1) !important; }
+.bd-info-2 { border-color: var(--info-clr-2) !important; }
+.bd-info-3 { border-color: var(--info-clr-3) !important; }
+.bd-info-tran { border-color: var(--info-clr-tran) !important; }
+
+/*****************************************************************************
+CSS Reset
+---------------
+This is a basic CSS reset to remove default browser styling.
+*****************************************************************************/
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--dark-clr-2);
+}
+
+address {
+  font-style: normal;
+}
+
+hr {
+  /* Reset hr */
+  border: 0;
+  border-top: 1px solid var(--dark-clr-6);
+  margin: 0.3rem 0;
+  opacity: 0.5;
+}
+
+/******************************************************************************
+* Typography
+-------------
+* Conatins all the styles for the typography.
+******************************************************************************/
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+label {
+  font-size: 1rem;
+  font-weight: 400;
+}
+small {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+strong {
+  font-weight: 700;
+}
+
+/* Font Size Classes */
+.ft-size-1 {
+  font-size: 0.6rem !important;
+}
+.ft-size-2 {
+  font-size: 0.7rem !important;
+}
+.ft-size-3 {
+  font-size: 1rem !important;
+}
+.ft-size-4 {
+  font-size: 1.2rem !important;
+}
+.ft-size-5 {
+  font-size: 1.4rem !important;
+}
+
+/* Font Weight classes */
+.ft-wt-100 {
+  font-weight: 100;
+}
+.ft-wt-200 {
+  font-weight: 200;
+}
+.ft-wt-300 {
+  font-weight: 300;
+}
+.ft-wt-400 {
+  font-weight: 400;
+}
+.ft-wt-500 {
+  font-weight: 500;
+}
+.fonftt-wt-600 {
+  font-weight: 600;
+}
+.ft-wt-700 {
+  font-weight: 700;
+}
+.ft-wt-800 {
+  font-weight: 800;
+}
+.ft-wt-900 {
+  font-weight: 900;
+}
+
+/* Text Align Classes */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+/* Text Transform Classes */
+.text-upper {
+  text-transform: uppercase;
+}
+.text-lower {
+  text-transform: lowercase;
+}
+.text-proper {
+  text-transform: capitalize;
+}
+
+/* Text Decoration Classes */
+.text-underline {
+  text-decoration: underline;
+}
+.text-line-through {
+  text-decoration: line-through;
+}
+
+/******************************************************************************
+* Base Container 
+----------------
+* Contains the base styles for the base container.
+* Usage example:
+* ```
+* <div class="container"></div>
+* ```
+******************************************************************************/
+.container {
+  container: container / inline-size;
+}
+
+/* Container widths */
+.w-100 {
+  width: 100%;
+}
+.w-90 {
+  width: 90%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-50 {
+  width: 50%;
+}
+
+/* Container heights */
+.h-100 {
+  height: 100%;
+}
+.h-90 {
+  height: 90%;
+}
+.h-80 {
+  height: 80%;
+}
+.h-70 {
+  height: 70%;
+}
+.h-60 {
+  height: 60%;
+}
+.h-50 {
+  height: 50%;
+}
+
+/******************************************************************************
+* Base Wrapper
+---------------
+* Contains the base styles for the base wrapper.
+* This is used to wrap content such as a form or a card enabling consistancy.
+* Usage example:
+* ```
+* <div class="wrapper">
+    <form class="form"></form>
+  </div>
+* ```
+******************************************************************************/
+.base-wrapper {
+  background-color: var(--dark-clr-3);
+  padding: 1rem;
+  border: 1px solid var(--dark-clr-6);
+  transition: all 0.4s ease-out;
+}
+.base-wrapper:hover {
+  box-shadow: 2px 2px 6px 2px var(--dark-clr-4);
+}
+
+/******************************************************************************
+* Flexbox Grid
+---------------
+* Contains the styles for the flexbox grid.
+* Usage example:
+* ```
+* <div class="row">
+*   <div class="col-span-6"></div>
+*   <div class="col-span-6"></div>
+* </div>
+******************************************************************************/
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.col-span-1,
+.col-span-2,
+.col-span-3,
+.col-span-4,
+.col-span-5,
+.col-span-6,
+.col-span-7,
+.col-span-8,
+.col-span-9,
+.col-span-10,
+.col-span-11,
+.col-span-12 {
+  flex-basis: 100%;
+}
+/* Media query for the flex grid */
+@media all and (min-width: 780px) {
+  .row {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .col-span-1 {
+    flex: calc((1 / 12) * 1);
+  }
+  .col-span-2 {
+    flex: calc((1 / 12) * 2);
+  }
+  .col-span-3 {
+    flex: calc((1 / 12) * 3);
+  }
+  .col-span-4 {
+    flex: calc((1 / 12) * 4);
+  }
+  .col-span-5 {
+    flex: calc((1 / 12) * 5);
+  }
+  .col-span-6 {
+    flex: calc((1 / 12) * 6);
+  }
+  .col-span-7 {
+    flex: calc((1 / 12) * 7);
+  }
+  .col-span-8 {
+    flex: calc((1 / 12) * 8);
+  }
+  .col-span-9 {
+    flex: calc((1 / 12) * 9);
+  }
+  .col-span-10 {
+    flex: calc((1 / 12) * 10);
+  }
+  .col-span-11 {
+    flex: calc((1 / 12) * 11);
+  }
+  .col-span-12 {
+    flex: calc((1 / 12) * 12);
+  }
+}
+
+/******************************************************************************
+* Gap Spacing
+---------------
+* Contains the styles for the gap spacing.
+******************************************************************************/
+.g-0 {
+  gap: 0;
+}
+.g-1 {
+  gap: 0.25rem;
+}
+.g-2 {
+  gap: 0.5rem;
+}
+.g-3 {
+  gap: 0.75rem;
+}
+.g-4 {
+  gap: 1rem;
+}
+.g-5 {
+  gap: 1.25rem;
+}
+
+/******************************************************************************
+* Padding 
+-----------
+* Contains the styles for the padding.
+******************************************************************************/
+.p-0 {
+  padding: 0;
+}
+.p-1 {
+  padding: 0.25rem;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.p-5 {
+  padding: 1.25rem;
+}
+
+/******************************************************************************
+* Margin
+-----------
+* Contains the styles for the margin.
+******************************************************************************/
+.m-auto {
+  margin: auto;
+}
+.m-0 {
+  margin: 0;
+}
+.m-1 {
+  margin: 0.25rem;
+}
+.m-2 {
+  margin: 0.5rem;
+}
+.m-3 {
+  margin: 0.75rem;
+}
+.m-4 {
+  margin: 1rem;
+}
+.m-5 {
+  margin: 1.25rem;
+}
+
+/******************************************************************************
+* Border Radius
+----------------
+* Contains the styles for the border radius.
+******************************************************************************/
+.rounded-1 {
+  border-radius: 0.25rem;
+}
+.rounded-2 {
+  border-radius: 0.5rem;
+}
+.rounded-3 {
+  border-radius: 0.75rem;
+}
+.rounded-4 {
+  border-radius: 1rem;
+}
+.rounded-full {
+  border-radius: 100vh;
+}
+
+/******************************************************************************
+* Grid System
+---------------
+* Contains the styles for the grid system. There are 2 types of grid rows.
+* 1. grid-row-flex: Provides grid tracks that flex to fill container but
+*    wrap when at the minimum size specified.
+* 2. grid-row-fixed: Provides grid tracks that are fixed in size and but wrap
+*    when at the minimum size specified.
+Example:
+```
+<div class="grid-row-flex cols-3 p-1 g-1 track-250">
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+</div>
+```
+******************************************************************************/
+.grid-row-flex {
+  --columns: 1;
+  --track-size: 50px;
+  --min-size: max(var(--track-size), calc(100% / var(--columns)));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--min-size), 1fr));
+}
+
+.grid-row-fixed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--track-size), var(--track-size)));
+}
+
+/* Columns */
+.cols-1 {
+  --columns: 2;
+}
+.cols-2 {
+  --columns: 3;
+}
+.cols-3 {
+  --columns: 4;
+}
+.cols-4 {
+  --columns: 5;
+}
+.cols-5 {
+  --columns: 6;
+}
+.cols-6 {
+  --columns: 7;
+}
+.cols-7 {
+  --columns: 8;
+}
+.cols-8 {
+  --columns: 9;
+}
+.cols-9 {
+  --columns: 10;
+}
+.cols-10 {
+  --columns: 11;
+}
+.cols-11 {
+  --columns: 12;
+}
+.cols-12 {
+  --columns: 13;
+}
+
+/* Track Size */
+.track-50 {
+  --track-size: 50px;
+}
+.track-100 {
+  --track-size: 100px;
+}
+.track-150 {
+  --track-size: 150px;
+}
+.track-200 {
+  --track-size: 200px;
+}
+.track-250 {
+  --track-size: 250px;
+}
+.track-300 {
+  --track-size: 300px;
+}
+.track-350 {
+  --track-size: 350px;
+}
+.track-400 {
+  --track-size: 400px;
+}
+
+/******************************************************************************
+* Basic Grid Layouts
+----------------------
+1. Grid: A grid layout on the block axis.
+2. Grid Inline: A grid layout on the inline axis.
+******************************************************************************/
+.grid {
+  display: grid;
+}
+
+.grid-inline {
+  display: inline-grid;
+}
+
+/******************************************************************************
+* Align Items
+----------------
+* Contains the styles for the align items.
+******************************************************************************/
+.align-start {
+  align-items: start;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: end;
+}
+
+/******************************************************************************
+* Place Items
+----------------
+* Contains the styles for the place items.
+******************************************************************************/
+.place-start {
+  place-items: start;
+}
+.place-center {
+  place-items: center center;
+}
+.place-end {
+  place-items: end;
+}
+
+/******************************************************************************
+* Justify Content
+-------------------
+* Contains the styles for the justify content.
+******************************************************************************/
+.justify-start {
+  justify-content: start;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/******************************************************************************
+* Positioning
+----------------
+* Contains the styles for the positioning.
+******************************************************************************/
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.pos-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pos-relative {
+  position: relative;
+}
+
+/******************************************************************************
+* Base flex classes
+---------------------
+* Contains the base flex classes.
+******************************************************************************/
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.flex-col {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.flex-row-wrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex-col-wrap {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/******************************************************************************
+* Form Styles
+----------------
+* Contains the styles for the form elements.
+******************************************************************************/
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/******************************************************************************
+* Button Styles
+----------------
+* Contains the styles for the button elements.
+******************************************************************************/
+.btn {
+  background-color: var(--dark-clr-3);
+  color: var(--dark-clr-10);
+  border: 1px solid var(--dark-clr-6);
+  min-height: 40px;
+  min-width: 40px;
+  padding: 0.2rem;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  width: fit-content;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn:hover.btn-hover {
+  box-shadow: 0px 0px 6px 2px var(--primary-clr-2);
+}
+
+/* Button Sizes */
+.btn-sm {
+  padding: 0.25rem 0.5rem !important;
+  font-size: 0.8rem !important;
+}
+.btn-md {
+  padding: 0.5rem 1rem !important;
+}
+.btn-lg {
+  padding: 0.75rem 1.5rem !important;
+}
+.btn-xl {
+  padding: 1rem 2rem !important;
+}
+.btn-xxl {
+  padding: 1.25rem 2.5rem !important;
+}
+
+/* Button borders */
+.border-0 {
+  border: none !important;
+}
+
+/* Button shadow */
+.btn-shadow {
+  box-shadow: 2px 2px 6px 2px var(--dark-clr-3);
+}
+
+/******************************************************************************
+* Form Controls
+----------------
+* Contains the base styling for Input, Select & Textarea elements.
+******************************************************************************/
+.form-control {
+  padding: 0.5rem;
+  min-height: 40px;
+  max-height: 120px;
+  border: 1px solid var(--dark-clr-6);
+  background-color: var(--dark-clr-3);
+  transition: all 0.4s ease-out;
+  padding-left: 0.2rem;
+  outline: none;
+  font-size: 0.9rem;
+  width: 100%;
+}
+.form-control:focus {
+  box-shadow: 0px 0px 6px 2px var(--primary-clr-2);
+}
+
+/* Input */
+input[type="text"]::placeholder {
+  color: var(--dark-clr-8);
+}
+
+/******************************************************************************
+* Option Styles
+----------------
+* Contains the styles for the option elements.
+* The styling for this is very limited due to the lack of support for styling
+******************************************************************************/
+option {
+  padding: 0.5rem;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+option:hover {
+  background-color: var(--dark-clr-7);
+}
+
+/******************************************************************************
+* Checkbox Styles
+-------------------
+* Contains the styles for the checkbox elements.
+******************************************************************************/
+.check-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  border-radius: 0.25rem;
+}
+/* Hide checkbox */
+.checkbox input {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--dark-clr-6);
+  border-radius: 0.25rem;
+  appearance: none;
+}
+/* Custom checkmark */
+.checkbox input::after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.7rem;
+  color: var(--dark-clr-1);
+  display: none;
+}
+.checkbox input:checked::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(36%, 36%);
+  background-color: transparent;
+}
+.checkbox input:checked {
+  box-shadow: 0px 0px 5px 3px var(--primary-clr-3);
+}
+/* Label */
+.check-label {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/******************************************************************************
+* Basic Card
+--------------
+* Contains the styles for the basic card.
+******************************************************************************/
+.card {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.img-wrapper {
+  display: grid;
+  place-items: center;
+}
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+.card-sale-banner {
+  background-color: var(--danger-clr-1);
+  color: var(--dark-clr-10);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  width: fit-content;
+}
+
+/******************************************************************************
+* Links
+---------
+* Contains the styles for the links.
+******************************************************************************/
+.link {
+  color: var(--primary-clr-1);
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+}
+.link:hover {
+  color: var(--primary-clr-tran);
+  background-color: var(--dark-clr-10);
+}
+
+/******************************************************************************
+* Blockquote
+--------------
+* Contains the styles for the blockquote.
+******************************************************************************/
+blockquote {
+  background-color: var(--dark-clr-3);
+  border-left: 5px solid var(--primary-clr-1);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/******************************************************************************
+* Logo
+---------
+* Contains the styles for the logo.
+******************************************************************************/
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-clr-10);
+}
+
+/******************************************************************************
+* Navbar
+----------------
+* Contains the styles for the dark navbar.
+******************************************************************************/
+.nav-link {
+  color: var(--dark-clr-10);
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+}
+.nav-link:hover {
+  color: var(--dark-clr-7);
+}
+
+/******************************************************************************
+* Hero
+----------------
+* Contains the styles for the hero section.
+******************************************************************************/
+.hero {
+  height: 80vh;
+  background-image: linear-gradient(to right, var(--dark-clr-1) 30%, #00000088),
+  url(https://www.hdwallpaper.nu/wp-content/uploads/2017/02/fitness-17.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.hero-content {
+  height: 80vh;
+  color: var(--dark-clr-10);
+}
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+/******************************************************************************
+* Main
+----------------
+* Contains the styles for the main section
+******************************************************************************/
+.main {
+  min-height: 300px;
+}
+
+/******************************************************************************
+* Footer
+----------------
+* Contains the styles for the footer section
+******************************************************************************/
+.footer {
+  background-color: var(--dark-clr-1);
+  color: var(--dark-clr-10);
+}
+.footer-link {
+  color: var(--dark-clr-10);
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+}
+.footer-link:hover {
+  color: var(--dark-clr-7);
+}
+
+
+/******************************************************************************
+* Container Queries
+--------------------
+* Contains the styles for the container queries.
+******************************************************************************/
+/* Base Container */
+@container container (max-width: 576px) {
+  .grid-row-fixed {
+    justify-content: center;
+  }
+  .grid-row-flex {
+    justify-content: center;
+  }
+}
+
+/******************************************************************************
+* Media Queries
+--------------------
+* Contains the media queries for the different screen sizes.
+* There are 5 different screen sizes:
+* 1. Extra Small (xs) - 0px to 576px
+* 2. Small (sm) - 576px to 768px
+* 3. Medium (md) - 768px to 992px
+* 4. Large (lg) - 992px to 1200px
+* 5. Extra Large (xl) - 1200px and above
+******************************************************************************/
+/* Extra Small */
+@media (max-width: 576px) {
+  .track-50,
+  .track-100,
+  .track-150,
+  .track-200,
+  .track-250,
+  .track-300,
+  .track-350,
+  .track-400 {
+    --track-size: 100%;
+  }
+}
+
+/* Small */
+@media all and (min-width: 576px) {
+  
+}
+
+/* Medium */
+@media all and (min-width: 768px) {
+  
+}
+
+/* Large */
+@media all and (min-width: 992px) {
+  
+}
+
+/* Extra Large */
+@media all and (min-width: 1200px) {
+  
+}
