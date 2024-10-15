@@ -95,6 +95,8 @@ the text/font or border color.
 .bg-info-3 { background-color: var(--info-clr-3) !important; }
 .bg-info-tran { background-color: var(--info-clr-tran) !important; }
 
+.bg-trans { background-color: transparent !important;}
+
 /* Text colours */
 .ft-dark-1 { color: var(--dark-clr-1) !important; }
 .ft-dark-2 { color: var(--dark-clr-2) !important; }
@@ -199,6 +201,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
+  color: var(--primary-clr-3);
+  transition: all 0.4s ease-out;
+}
+a:hover {
+  color: var(--primary-clr-2);
 }
 
 li {
@@ -301,7 +308,7 @@ strong {
 .ft-wt-500 {
   font-weight: 500;
 }
-.fonftt-wt-600 {
+.ft-wt-600 {
   font-weight: 600;
 }
 .ft-wt-700 {
@@ -891,6 +898,7 @@ input[type="text"]::placeholder {
   color: var(--dark-clr-8);
 }
 
+
 /******************************************************************************
 * Option Styles
 ----------------
@@ -1026,6 +1034,7 @@ blockquote {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--dark-clr-10);
+  text-decoration: none;
 }
 
 /******************************************************************************
@@ -1048,12 +1057,38 @@ blockquote {
 * Contains the styles for the hero section.
 ******************************************************************************/
 .hero {
+  transition: 0.1s;
+  position: relative;
+}
+.hero-1 {
   height: 80vh;
   background-image: linear-gradient(to right, var(--dark-clr-1) 30%, #00000088),
   url(https://www.hdwallpaper.nu/wp-content/uploads/2017/02/fitness-17.jpg);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+}
+.hero-2 {
+  height: 80vh;
+  background-image: linear-gradient(to right, var(--dark-clr-1) 30%, #00000088),
+  url(https://images8.alphacoders.com/110/thumb-1920-1106033.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 0;
+}
+.hero-btn {
+  position: absolute;
+  top: 50%;
+}
+#hero-btn-left {
+  left: 1rem;
+}
+#hero-btn-right {
+  right: 1rem;
 }
 .hero-content {
   height: 80vh;
@@ -1093,6 +1128,73 @@ blockquote {
 
 
 /******************************************************************************
+* Allauth styling
+----------------
+* Contains the styles for the allauth templates
+******************************************************************************/
+.my-form {
+  padding: 0.5rem;
+  display: grid;
+  gap: 0.5rem;
+  color: var(--dark-clr-10);
+}
+.my-form input[type=text],
+.my-form input[type=password],
+.my-form input[type=email] {
+  padding: 0.5rem;
+  min-height: 40px;
+  max-height: 120px;
+  border: 1px solid var(--dark-clr-6);
+  background-color: var(--dark-clr-3);
+  transition: all 0.4s ease-out;
+  padding-left: 0.2rem;
+  outline: none;
+  font-size: 0.9rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  color: var(--dark-clr-10);
+}
+.my-form input[type=text]:focus,
+.my-form input[type=password]:focus,
+.my-form input[type=email]:focus {
+  box-shadow: 0px 0px 6px 2px var(--primary-clr-2);
+  background-color: var(--dark-clr-3);
+}
+
+.my-form input[type=checkbox] {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  border-radius: 0.25rem;
+  border: 1px solid var(--dark-clr-6);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  appearance: none;
+}
+
+/* Custom checkmark */
+.my-form input[type=checkbox]::after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.7rem;
+  color: var(--dark-clr-10);
+  display: none;
+}
+.my-form input[type=checkbox]:checked::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(36%, 36%);
+  background-color: transparent;
+}
+.my-form input[type=checkbox]:checked {
+  box-shadow: 0px 0px 5px 3px var(--primary-clr-3);
+}
+
+/******************************************************************************
 * Container Queries
 --------------------
 * Contains the styles for the container queries.
@@ -1129,6 +1231,9 @@ blockquote {
   .track-350,
   .track-400 {
     --track-size: 100%;
+  }
+  .w-50 {
+    width: 100%;
   }
 }
 
