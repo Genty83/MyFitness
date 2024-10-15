@@ -28,7 +28,7 @@
     {% endblock %}
   
     {% block js %}
-  
+    <script src="{% static 'js/main.js' %}" defer></script>
     {% endblock %}
   </head>
 <body>
@@ -66,7 +66,7 @@
           <nav>
             <ul class="flex-row justify-center align-center g-3">
               <li>
-                <a href="#" class="nav-link">Home</a>
+                <a href="{% url 'home' %}" class="nav-link">Home</a>
               </li>
               <li>
                 <a href="#" class="nav-link">Shop
@@ -87,8 +87,9 @@
             <a href="{% url 'account_login' %}" class="btn btn-md bg-primary-1 rounded-1">
               Login
             </a>
-            <button type="button" class="btn btn-md rounded-1">
+            <a href="{% url 'account_signup' %}" class="btn btn-md rounded-1">
               Sign Up
+            </a>
           </div>
         </div>
       </div>
@@ -102,57 +103,56 @@
 
   <!-- Footer start -->
   <footer class="footer">
-    <div class="container w-100">
-      <div class="grid-row-fixed track-300 g-2 p-2 justify-center">
+    <div class="container w-100 m-auto">
+      <div class="grid-row-fixed track-300 cols-4 g-2 p-2 justify-center">
         <div class="flex-col g-2">
           <h4>Contact Us</h4>
-          <p>My Fitness</p>
-          <p>123 Street</p>
-          <p>City</p>
-          <p>Postcode</p>
+          <a class="footer-link" href="#">Login</a>
+          <a class="footer-link" href="#">Account</a>
+          <a class="footer-link" href="#">Basket</a>
+          <a class="footer-link" href="#">Checkout</a>
         </div>
-        <div>
+        <div class="flex-col g-2">
           <h4>Useful Links</h4>
-          <div class="flex-col g-2">
-            <a class="footer-link" href="#">Login</a>
-            <a class="footer-link" href="#">Account</a>
-            <a class="footer-link" href="#">Basket</a>
-            <a class="footer-link" href="#">Checkout</a>
-          </div>
+          <a class="footer-link" href="#">Login</a>
+          <a class="footer-link" href="#">Account</a>
+          <a class="footer-link" href="#">Basket</a>
+          <a class="footer-link" href="#">Checkout</a>
         </div>
-        <div>
+        <div class="flex-col g-2">
           <h4>Site Map</h4>
-          <div class="flex-col g-2">
-            <a class="footer-link" href="#">Home</a>
-            <a class="footer-link" href="#">Shop</a>
-            <a class="footer-link" href="#">About</a>
-            <a class="footer-link" href="#">Contact</a>
-          </div>
+          <a class="footer-link" href="#">Home</a>
+          <a class="footer-link" href="#">Shop</a>
+          <a class="footer-link" href="#">About</a>
+          <a class="footer-link" href="#">Contact</a>
         </div>
-        <div>
-          <div class="flex-col g-2">
-            <h4>Newsletter</h4>
-            <p>Subscribe to our Newsletter to recieve the latest offers!</p>
-            <form class="flex-row g-1" action="">
-              <input type="email" name="" id="" class="form-control ft-dark-10 rounded-1" placeholder="Enter your email...">
-              <button type="submit" class="btn btn-md bg-primary-1 border-0 rounded-1 grid justify-center align-center">
-                Subscribe
-              </button>
-            </form>
-            <div class="flex-row g-2">
-              <a href="#" class="btn rounded-1 btn-hover grid border-0 place-center">
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a href="#" class="btn rounded-1 btn-hover grid border-0 place-center">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="btn rounded-1 btn-hover grid border-0 place-center">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#" class="btn rounded-1 btn-hover grid border-0 place-center">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
+        <div class="flex-col g-2">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our Newsletter to recieve the latest offers!</p>
+          <form class="flex-row g-1" action="">
+            <input type="email" name="" id="" class="form-control ft-dark-10 rounded-1" placeholder="Enter your email...">
+            <button type="submit" class="btn btn-md bg-primary-1 border-0 rounded-1 grid justify-center align-center">
+              Subscribe
+            </button>
+          </form>
+          <div class="flex-row g-2">
+
+            <a href="#" class="btn rounded-1 btn-hover grid border-0 place-center">
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="#" class="btn rounded-1 btn-hover grid border-0 place-center">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="#" class="btn rounded-1 btn-hover grid border-0 place-center">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" class="btn rounded-1 btn-hover grid border-0 place-center">
+              <i class="fab fa-youtube"></i>
+            </a>
+
           </div>
         </div>
       </div>
